@@ -2,37 +2,33 @@
 
 ![Estado](https://img.shields.io/badge/Estado-Completado-success) ![Versión](https://img.shields.io/badge/Versión-1.0-blue) ![PHP](https://img.shields.io/badge/PHP-8.3-777BB4) ![MySQL](https://img.shields.io/badge/MySQL-Relacional-4479A1)
 
-## DESCRIPCIÓN
+**Atlacatl SGT** es un sistema web académico desarrollado para el **Instituto Nacional de Antiguo Cuscatlán (INAC)**. Centraliza la gestión de tareas, entregas y calificaciones del Tercer Año de Bachillerato Técnico Vocacional en Desarrollo de Software, ofreciendo una alternativa ligera y personalizada a plataformas genéricas.
 
-**Atlacatl SGT** es una solución de software integral desarrollada para el **Instituto Nacional de Antiguo Cuscatlán (INAC)**. El sistema moderniza el proceso educativo del Tercer Año de Bachillerato Técnico Vocacional en Desarrollo de Software, proporcionando una alternativa personalizada y eficiente a plataformas genéricas como Google Classroom.
+## STACK TECNOLÓGICO
 
-El proyecto aborda la necesidad de una gestión centralizada de asignaciones, calificaciones y entregas, adaptada específicamente al flujo de trabajo académico de la institución.
+| Categoría     | Tecnología        | Versión |
+| :------------ | :---------------- | :------ |
+| Backend       | PHP               | 8.3     |
+| Base de Datos | MySQL             | N/A     |
+| Frontend      | HTML5 / CSS3 / JS | ES2023  |
+| Framework CSS | Bootstrap         | 5.6     |
+| Entorno Local | XAMPP             | 3.3.0   |
+| IDE           | VS Code           | 1.90.2  |
 
-## STACK TECNOLOGICO
-
-| Categoría         | Tecnología        | Versión |
-| :---------------- | :---------------- | :------ |
-| **Backend**       | PHP               | 8.3     |
-| **Base de Datos** | MySQL             | N/A     |
-| **Frontend**      | HTML5 / CSS3 / JS | ES2023  |
-| **Framework CSS** | Bootstrap         | 5.6     |
-| **Entorno Local** | XAMPP             | 3.3.0   |
-| **IDE**           | VS Code           | 1.90.2  |
-
-## FUNCIONALIDADES CLAVE
+## FUNCIONALIDADES
 
 ### Módulo Docente
 
--   **Gestión de Contenido (CRUD):** Creación, lectura, actualización y eliminación de tareas con soporte para archivos adjuntos.
--   **Sistema de Calificaciones:** Panel administrativo para evaluar entregas con precisión decimal (0.0 - 10.0).
--   **Control de Usuarios:** Gestión completa de los perfiles estudiantiles (NIE, Credenciales).
--   **Monitoreo:** Visualización en tiempo real del estado de entrega de cada estudiante.
+-   **CRUD de tareas** con archivos adjuntos.
+-   **Calificación de entregas** con precisión decimal.
+-   **Gestión de usuarios** (perfiles estudiantiles).
+-   **Monitoreo de estado** de entregas por estudiante.
 
 ### Módulo Estudiante
 
--   **Entrega de Tareas:** Interfaz simplificada para la subida de archivos (PDF, DOCX, IMG).
--   **Gestión de Envíos:** Capacidad de anular o reemplazar entregas antes de la fecha de vencimiento.
--   **Dashboard Personal:** Acceso inmediato a tareas pendientes, calificaciones y feedback.
+-   **Entrega y reemplazo** de archivos (PDF, DOCX, IMG).
+-   **Gestión de envíos** antes de la fecha límite.
+-   **Dashboard** con tareas y notas.
 
 ## CAPTURAS DE PANTALLA
 
@@ -40,33 +36,43 @@ El proyecto aborda la necesidad de una gestión centralizada de asignaciones, ca
 | :----------------------------: | :------------------------------------: |
 | ![Login](img/login_screen.png) | ![Dashboard](img/dashboard_screen.png) |
 
-## INSTALACIÓN Y DESPLIEGUE
+## INSTALACIÓN
 
-Este proyecto está optimizado para despliegue en servidores Apache (XAMPP local).
+1. **Clonar el repositorio**
 
-1.  **Clonar el repositorio:**
     ```bash
     git clone https://github.com/ernestolindo/atlacatl-sgt.git
     ```
-2.  **Base de Datos:**
-    -   Crear una base de datos en MySQL.
-    -   Importar el script SQL ubicado en `/database/script.sql`.
-3.  **Configuración:**
-    -   Editar el archivo `Clases/Database.php`.
-    -   Actualizar las credenciales (`$dbhost`, `$dbuser`, `$dbpass`, `$dbname`).
-4.  **Ejecución:**
-    -   Servir la aplicación desde `htdocs` (XAMPP).
+
+2. **Base de datos**
+
+    - Crear base en MySQL.
+    - Importar `/database/script.sql`.
+
+3. **Configurar conexión**
+
+    - Editar `Clases/Database.php` con tus credenciales.
+
+4. **Ejecución**
+
+    - Servir desde `htdocs` (XAMPP).
+
+## DOCUMENTACIÓN
+
+Documentos completos disponibles en `/docs`:
+
+-   Manual de Usuario
+-   Manual de Instalación
+-   Análisis y Diseño del Sistema
 
 ## EQUIPO DE DESARROLLO
 
-Proyecto desarrollado como parte del módulo "Desarrollo de aplicaciones de software para la solución de problemas" (INAC 2024):
-
--   **David Ernesto Lindo Argueta** - _Jefe de Equipo & Full Stack Dev_
--   **Ángel Josué Araujo Melara** - _Backend & Database_
--   **Dagoberto Ezequiel Pineda Castillo** - _Frontend & UI/UX_
--   **Héctor Alejandro Medrano Ceballos** - _QA & Testing_
--   **Víctor Guillermo Benítez Montoya** - _Documentación & Soporte_
+-   **Ernesto Lindo** – Jefe de Equipo & Full Stack
+-   **Ángel Araujo** – Backend & Database
+-   **Ezequiel Pineda** – Frontend & UI/UX
+-   **Héctor Medrano** – QA & Testing
+-   **Víctor Benítez** – Documentación & Soporte
 
 ---
 
-© 2024 Atlacatl SGT. Todos los derechos reservados.
+© 2024 Atlacatl SGT. Proyecto académico sin fines comerciales.
