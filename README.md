@@ -14,21 +14,11 @@ El sistema fue construido siguiendo una arquitectura robusta y bien documentada.
 
 ### Diagrama de Clases
 
-Representa la estructura estática del sistema y las relaciones entre las entidades principales (Usuarios, Tareas, Entregas).
-
 ![Diagrama de Clases](img/diagrama_clases.png)
 
 ### Modelo Entidad-Relación (ERD)
 
-Diseño de la base de datos relacional MySQL, optimizada para la integridad referencial entre docentes, estudiantes y asignaciones.
-
 ![Diagrama ERD](img/diagrama_erd.png)
-
-### Casos de Uso
-
-Visualización de las interacciones principales entre los actores (Docente/Estudiante) y el sistema.
-
-![Casos de Uso](img/casos_uso.png)
 
 ## Stack Tecnológico
 
@@ -64,24 +54,24 @@ Visualización de las interacciones principales entre los actores (Docente/Estud
 
 ## INSTALACIÓN Y DESPLIEGUE
 
-Este proyecto está optimizado para despliegue en servidores Apache (XAMPP local o Hosting compartido).
+Este proyecto está optimizado para despliegue en servidores Apache (XAMPP local).
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone [https://github.com/tu-usuario/atlacatl-sgt.git](https://github.com/tu-usuario/atlacatl-sgt.git)
+    git clone https://github.com/ernestolindo/atlacatl-sgt.git
     ```
 2.  **Base de Datos:**
     -   Crear una base de datos en MySQL.
     -   Importar el script SQL ubicado en `/database/script.sql`.
 3.  **Configuración:**
-    -   Editar el archivo `Clases/y.php`.
+    -   Editar el archivo `Clases/Database.php`.
     -   Actualizar las credenciales (`$dbhost`, `$dbuser`, `$dbpass`, `$dbname`).
 4.  **Ejecución:**
-    -   Servir la aplicación desde `htdocs` (XAMPP) o subir vía FTP al directorio público del hosting.
+    -   Servir la aplicación desde `htdocs` (XAMPP).
 
 ## EQUIPO DE DESARROLLO
 
-Proyecto desarrollado como parte del módulo de desarrollo de aplicaciones de software (INAC 2024):
+Proyecto desarrollado como parte del módulo "Desarrollo de aplicaciones de software para la solución de problemas" (INAC 2024):
 
 -   **David Ernesto Lindo Argueta** - _Jefe de Equipo & Full Stack Dev_
 -   **Ángel Josué Araujo Melara** - _Backend & Database_
