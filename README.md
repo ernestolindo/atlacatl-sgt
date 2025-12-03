@@ -1,6 +1,5 @@
-# Atlacatl SGT (Sistema de Gestión de Tareas)
+# ATLACATL SGT (Sistema de Gestión de Tareas)
 
-![Banner del Proyecto](img/banner-proyecto.png)
 ![Estado](https://img.shields.io/badge/Estado-Completado-success) ![Versión](https://img.shields.io/badge/Versión-1.0-blue) ![PHP](https://img.shields.io/badge/PHP-8.3-777BB4) ![MySQL](https://img.shields.io/badge/MySQL-Relacional-4479A1)
 
 ## DESCRIPCIÓN
@@ -16,16 +15,19 @@ El sistema fue construido siguiendo una arquitectura robusta y bien documentada.
 ### Diagrama de Clases
 
 Representa la estructura estática del sistema y las relaciones entre las entidades principales (Usuarios, Tareas, Entregas).
+
 ![Diagrama de Clases](img/diagrama_clases.png)
 
 ### Modelo Entidad-Relación (ERD)
 
 Diseño de la base de datos relacional MySQL, optimizada para la integridad referencial entre docentes, estudiantes y asignaciones.
+
 ![Diagrama ERD](img/diagrama_erd.png)
 
 ### Casos de Uso
 
 Visualización de las interacciones principales entre los actores (Docente/Estudiante) y el sistema.
+
 ![Casos de Uso](img/casos_uso.png)
 
 ## Stack Tecnológico
