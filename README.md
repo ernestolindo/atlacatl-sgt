@@ -12,9 +12,9 @@ El proyecto aborda la necesidad de una gestión centralizada de asignaciones, ca
 
 El sistema fue construido siguiendo una arquitectura robusta y bien documentada. A continuación se presentan los diagramas clave que fundamentan la estructura del software.
 
-|               Diagrama de clases               |        Modelo entidad-relacion        |
-| :--------------------------------------------: | :-----------------------------------: |
-| ![Diagrama de Clases](img/diagrama_clases.png) | ![Diagrama ERD](img/diagrama_erd.png) |
+|               Diagrama de clases               |
+| :--------------------------------------------: |
+| ![Diagrama de Clases](img/diagrama_clases.png) |
 
 ## Stack Tecnológico
 
