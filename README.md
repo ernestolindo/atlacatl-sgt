@@ -8,15 +8,7 @@
 
 El proyecto aborda la necesidad de una gestión centralizada de asignaciones, calificaciones y entregas, adaptada específicamente al flujo de trabajo académico de la institución.
 
-## ARQUITECTURA Y DISEÑO
-
-El sistema fue construido siguiendo una arquitectura robusta y bien documentada. A continuación se presentan los diagramas clave que fundamentan la estructura del software.
-
-|               Diagrama de clases               |
-| :--------------------------------------------: |
-| ![Diagrama de Clases](img/diagrama_clases.png) |
-
-## Stack Tecnológico
+## STACK TECNOLOGICO
 
 | Categoría         | Tecnología        | Versión |
 | :---------------- | :---------------- | :------ |
