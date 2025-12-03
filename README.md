@@ -1,88 +1,92 @@
 # Atlacatl SGT (Sistema de Gestión de Tareas)
 
-![Estado del Proyecto](https://img.shields.io/badge/Estado-Finalizado-success) ![Versión](https://img.shields.io/badge/Versión-1.0-blue)
+![Banner del Proyecto](img/banner-proyecto.png)
+![Estado](https://img.shields.io/badge/Estado-Completado-success) ![Versión](https://img.shields.io/badge/Versión-1.0-blue) ![PHP](https://img.shields.io/badge/PHP-8.3-777BB4) ![MySQL](https://img.shields.io/badge/MySQL-Relacional-4479A1)
 
-[cite_start]**Atlacatl SGT** es una plataforma web de gestión de tareas diseñada para modernizar y optimizar el proceso educativo del **Instituto Nacional de Antiguo Cuscatlán (INAC)**[cite: 14, 39]. [cite_start]Este sistema nace como una alternativa personalizada, minimalista y eficiente a Google Classroom, enfocada específicamente en las necesidades del Tercer Año de Bachillerato Técnico Vocacional en Desarrollo de Software[cite: 17, 22].
+## 📖 Descripción
 
-## 📋 Características Principales
+**Atlacatl SGT** es una solución de software integral desarrollada para el **Instituto Nacional de Antiguo Cuscatlán (INAC)**. El sistema moderniza el proceso educativo del Tercer Año de Bachillerato Técnico Vocacional en Desarrollo de Software, proporcionando una alternativa personalizada y eficiente a plataformas genéricas como Google Classroom.
 
-[cite_start]El sistema es una solución bilateral que conecta a docentes y estudiantes en un entorno intuitivo[cite: 31].
+El proyecto aborda la necesidad de una gestión centralizada de asignaciones, calificaciones y entregas, adaptada específicamente al flujo de trabajo académico de la institución.
 
-### 👨‍🏫 Para Docentes
+## ⚙️ Arquitectura y Diseño
 
--   [cite_start]**Gestión de Tareas:** Crear, editar y eliminar asignaciones con archivos adjuntos[cite: 32, 33].
--   [cite_start]**Calificaciones:** Panel de control para visualizar entregas y asignar notas (0-10 con decimales)[cite: 34, 68].
--   [cite_start]**Gestión de Estudiantes:** Administración completa (CRUD) de los perfiles estudiantiles[cite: 69].
--   [cite_start]**Panel de Control:** Visualización del estado de entrega de cada alumno[cite: 93].
+El sistema fue construido siguiendo una arquitectura robusta y bien documentada. A continuación se presentan los diagramas clave que fundamentan la estructura del software.
 
-### 👨‍🎓 Para Estudiantes
+### Diagrama de Clases
 
--   [cite_start]**Entregas:** Subida de archivos (PDF, Word, imágenes, etc.) para cada asignación[cite: 35, 64].
--   [cite_start]**Gestión de Entregas:** Posibilidad de cancelar y reenviar tareas antes de la fecha límite[cite: 65].
--   [cite_start]**Visualización:** Acceso claro a detalles de tareas, fechas límite y calificaciones[cite: 48].
--   [cite_start]**Seguridad:** Registro único con NIE y gestión de contraseña personal[cite: 61, 63].
+Representa la estructura estática del sistema y las relaciones entre las entidades principales (Usuarios, Tareas, Entregas).
+![Diagrama de Clases](img/diagrama_clases.png)
 
-## 🛠️ Stack Tecnológico
+### Modelo Entidad-Relación (ERD)
 
-[cite_start]El proyecto fue desarrollado utilizando las siguientes tecnologías[cite: 369]:
+Diseño de la base de datos relacional MySQL, optimizada para la integridad referencial entre docentes, estudiantes y asignaciones.
+![Diagrama ERD](img/diagrama_erd.png)
 
--   [cite_start]**Lenguaje Backend:** PHP 8.3 [cite: 388]
--   [cite_start]**Base de Datos:** MySQL (Relacional) [cite: 408]
--   [cite_start]**Frontend:** HTML5, CSS3, JavaScript (ECMAScript 2023) [cite: 370, 397]
--   [cite_start]**Framework CSS:** Bootstrap 5.6 [cite: 384]
--   [cite_start]**Entorno de Desarrollo:** XAMPP 3.3.0 & VS Code [cite: 400, 403]
+### Casos de Uso
 
-## 🚀 Instalación y Despliegue
+Visualización de las interacciones principales entre los actores (Docente/Estudiante) y el sistema.
+![Casos de Uso](img/casos_uso.png)
 
-[cite_start]Esta guía cubre el despliegue en un hosting gratuito (basado en InfinityFree) como se detalla en la documentación oficial del proyecto[cite: 424].
+## 🚀 Stack Tecnológico
 
-### Prerrequisitos
+| Categoría         | Tecnología        | Versión |
+| :---------------- | :---------------- | :------ |
+| **Backend**       | PHP               | 8.3     |
+| **Base de Datos** | MySQL             | N/A     |
+| **Frontend**      | HTML5 / CSS3 / JS | ES2023  |
+| **Framework CSS** | Bootstrap         | 5.6     |
+| **Entorno Local** | XAMPP             | 3.3.0   |
+| **IDE**           | VS Code           | 1.90.2  |
 
--   [cite_start]Cliente FTP (FileZilla recomendado)[cite: 420].
--   [cite_start]Cuenta de hosting con soporte PHP y MySQL[cite: 448].
+## ✨ Funcionalidades Clave
 
-### Pasos de Instalación
+### 👨‍🏫 Módulo Docente
 
-1.  **Configuración de la Base de Datos:**
+-   **Gestión de Contenido (CRUD):** Creación, lectura, actualización y eliminación de tareas con soporte para archivos adjuntos.
+-   **Sistema de Calificaciones:** Panel administrativo para evaluar entregas con precisión decimal (0.0 - 10.0).
+-   **Control de Usuarios:** Gestión completa de los perfiles estudiantiles (NIE, Credenciales).
+-   **Monitoreo:** Visualización en tiempo real del estado de entrega de cada estudiante.
 
-    -   [cite_start]Crea una nueva base de datos MySQL desde el panel de control de tu hosting[cite: 498].
-    -   [cite_start]Accede a **phpMyAdmin** e importa el archivo `.sql` de la base de datos local[cite: 503].
+### 👨‍🎓 Módulo Estudiante
 
-2.  **Carga de Archivos:**
+-   **Entrega de Tareas:** Interfaz simplificada para la subida de archivos (PDF, DOCX, IMG).
+-   **Gestión de Envíos:** Capacidad de anular o reemplazar entregas antes de la fecha de vencimiento.
+-   **Dashboard Personal:** Acceso inmediato a tareas pendientes, calificaciones y feedback.
 
-    -   [cite_start]Conéctate a tu servidor vía FTP (Host, Usuario, Contraseña, Puerto 21)[cite: 484].
-    -   [cite_start]Sube todo el contenido de la carpeta del proyecto a la carpeta pública `htdocs` del servidor remoto[cite: 491, 493].
+## 📸 Capturas de Pantalla
 
-3.  **Configuración de Conexión:**
-    -   Edita el archivo `Database.php` (puede estar en la carpeta `Clases` o raíz).
-    -   Actualiza las credenciales con los datos de tu hosting (diferentes a los locales):
-    ```php
-    private $dbhost = 'sql308.infinityfree.com'; // Ejemplo
-    private $dbname = 'tu_nombre_de_base_de_datos';
-    private $dbuser = 'tu_usuario';
-    private $dbpass = 'tu_contraseña';
+|         Login Docente          |            Panel de Tareas             |
+| :----------------------------: | :------------------------------------: |
+| ![Login](img/login_screen.png) | ![Dashboard](img/dashboard_screen.png) |
+
+## 🔧 Instalación y Despliegue
+
+Este proyecto está optimizado para despliegue en servidores Apache (XAMPP local o Hosting compartido).
+
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone [https://github.com/tu-usuario/atlacatl-sgt.git](https://github.com/tu-usuario/atlacatl-sgt.git)
     ```
-    -   Guarda los cambios y sube el archivo actualizado[cite: 506, 509].
+2.  **Base de Datos:**
+    -   Crear una base de datos en MySQL.
+    -   Importar el script SQL ubicado en `/database/script.sql`.
+3.  **Configuración:**
+    -   Editar el archivo `Clases/Database.php`.
+    -   Actualizar las credenciales (`$dbhost`, `$dbuser`, `$dbpass`, `$dbname`).
+4.  **Ejecución:**
+    -   Servir la aplicación desde `htdocs` (XAMPP) o subir vía FTP al directorio público del hosting.
 
-## 👤 Credenciales de Acceso (Demo)
+## 👥 Equipo de Desarrollo
 
-[cite_start]Para pruebas con la cuenta docente preconfigurada[cite: 177]:
+Proyecto desarrollado como parte del módulo de desarrollo de aplicaciones de software (INAC 2024):
 
--   **Correo:** `estrada.aleman@clases.edu.sv`
--   **Contraseña:** `INAC2024`
-
-> [cite_start]**Nota:** Se recomienda cambiar estas credenciales inmediatamente desde el menú "Ajustes"[cite: 178].
-
-## ✒️ Autores
-
-[cite_start]Proyecto desarrollado por el equipo de estudiantes del INAC [cite: 6-10]:
-
--   [cite_start]**David Ernesto Lindo Argueta** (Jefe de equipo) [cite: 149]
--   **Ángel Josué Araujo Melara**
--   **Dagoberto Ezequiel Pineda Castillo**
--   **Héctor Alejandro Medrano Ceballos**
--   **Víctor Guillermo Benítez Montoya**
+-   **David Ernesto Lindo Argueta** - _Jefe de Equipo & Full Stack Dev_
+-   **Ángel Josué Araujo Melara** - _Backend & Database_
+-   **Dagoberto Ezequiel Pineda Castillo** - _Frontend & UI/UX_
+-   **Héctor Alejandro Medrano Ceballos** - _QA & Testing_
+-   **Víctor Guillermo Benítez Montoya** - _Documentación & Soporte_
 
 ---
 
-© 2024 Atlacatl SGT. [cite_start]Instituto Nacional de Antiguo Cuscatlán. [cite: 202]
+© 2024 Atlacatl SGT. Todos los derechos reservados.
